@@ -46,6 +46,9 @@
     <!-- wrapper -->
     <script src="https://valky.xyz/c/scripts/player.js"></script>
 
+    <!-- render -->
+    <script src="https://valky.xyz/c/scripts/renderai.js"></script>
+
     <!-- A-Frame -->
     <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
     
@@ -153,13 +156,12 @@
                                 vr-mode-ui="enabled: false"
                                 renderer="antialias: true;
                                     sortObjects: true;
-                                    logarithmicDepthBuffer: true;"
-                        >
+                                    logarithmicDepthBuffer: true;">
 
                             <a-assets>
                                 <a-asset-item
-                                        id="glb_anim"
-                                        src="https://valky.xyz/m/obj/anim/idle.glb">
+                                        id="ai_char"
+                                        src="https://valky.xyz/m/obj/undefined.glb">
                                 </a-asset-item>
                             </a-assets>
 
@@ -167,7 +169,7 @@
                                 <a-entity
                                         look-controls
                                         id="anim"
-                                        gltf-model="#glb_anim"
+                                        gltf-model="#ai_char"
                                         material="alphaTest: 0.5"
                                         animation-mixer>
                                 </a-entity>
